@@ -23,7 +23,7 @@ from sklearn.preprocessing import StandardScaler
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train LDA classifier for DoH detection")
-    parser.add_argument("--csv", type=str, default="../CSVs/Firefox/all.csv", help="Input CSV path")
+    parser.add_argument("--csv", type=str, default="../all.csv", help="Input CSV path")
     parser.add_argument("--target", type=str, default="DoH", help="Target column name")
     parser.add_argument("--test-size", type=float, default=0.2, help="Test set ratio")
     parser.add_argument("--random-state", type=int, default=42, help="Random seed")
